@@ -38,9 +38,343 @@ for (var i = 0; i < close.length; i++) {
   });
 }
 
+var t2 = gsap.timeline({
+  scrollTrigger:{
+    trigger: "#home",
+    start: "+=50px",
+    end: "+=2000px",
+    markers: true,
+    scrub: 1,
+  }
+})
+
+t2.to(".cen-text h1 .am, .mi, .it, .ta",{
+  x: '-1000',
+  duration: 3,
+},"home")
+
+t2.to(".cen-text h1 .ma, .ar, .ra, .at, .th, .he, .em",{
+  x: '1000',
+  duration: 3,
+},"home")
+
+function homeAnimation(){
+  
+  var t1 = gsap.timeline();
+
+    t1.from(".cen-text h1 .am",{
+        rotationZ: "90deg",
+        rotationX: "90deg",
+        left: "15%",
+        top: "-15%",
+        scale: 3,
+        opacity: 0,
+        duration: 2,
+        ease: "power1",
+      },"home");
+
+    t1.from(".cen-text h1 .mi",{
+        rotationX: "90deg",
+        rotationY: "90deg",
+        rotationZ: "45deg",
+        top: "-15%",
+        scale: 3,
+        opacity: 0,
+        duration: 2,
+        ease: "power1",
+      },"home");
+
+    t1.from(".cen-text h1 .it",{
+        rotationX: "90deg",
+        rotationY: "90deg",
+        scale: 3,
+        opacity: 0,
+        duration: 2,
+        ease: "power1",
+      },"home");
+
+    t1.from(".cen-text h1 .ta",{
+        rotationZ: "-90deg",
+        rotationY: "-90deg",
+        right: "15%",
+        scale: 3,
+        opacity: 0,
+        duration: 2,
+        ease: "power1",
+      },"home");
+
+    t1.from(".cen-text h1 .ma",{
+        rotation: 200,
+        left: "-1%",
+        top: "80%",
+        scale: 3,
+        opacity: 0,
+        duration: 2,
+        ease: "power1",
+      },"home");
+
+    t1.from(".cen-text h1 .ar",{
+      rotationZ: "-120deg",
+      rotationY: "-120deg",
+      left: '30%',
+      top: '70%',
+      scale: 3,
+      opacity: 0,
+      duration: 2,
+      ease: "power1",
+    },"home");
+
+    t1.from(".cen-text h1 .ra",{
+      rotation: 230,
+      top: '90%',
+      scale: 3,
+      opacity: 0,
+      duration: 2,
+      ease: "power1",
+    },"home");
+
+    t1.from(".cen-text h1 .at",{
+      rotationZ: "145deg",
+      rotationX: "145deg",
+      top: '70%',
+      scale: 3,
+      opacity: 0,
+      duration: 2,
+      ease: "power1",
+    },"home");
+
+    t1.from(".cen-text h1 .th",{
+      rotationZ: "180deg",
+      rotationX: "180deg",
+      left: '70%',
+      top: '70%',
+      scale: 3,
+      opacity: 0,
+      duration: 2,
+      ease: "power1",
+    },"home");
+    
+    t1.from(".cen-text h1 .he",{
+      rotationY: "360deg",
+      left: '80%',
+      top: '10%',
+      scale: 3,
+      opacity: 0,
+      duration: 2,
+      ease: "power1",
+    },"home");
+    
+    t1.from(".cen-text h1 .em",{
+      rotationZ: "180deg",
+      rotationX: "180deg",
+      rotationY: "180deg",
+      left: '80%',
+      top: '80%',
+      scale: 3,
+      opacity: 0,
+      duration: 2,
+      ease: "power1",
+    },"home");
+
+// ================================================================================================= 
+
+    t1.from(".cen-text h3 .f",{
+      rotationZ: "180deg",
+      rotationX: "180deg",
+      left: '50%',
+      top: '100%',
+      scale: 3,
+      opacity: 0,
+      duration: 2,
+      ease: "power1",
+    },"home");
+
+    t1.from(".cen-text h3 .r",{
+      rotationY: "180deg",
+      rotationX: "180deg",
+      left: '50%',
+      top: '70%',
+      scale: 3,
+      opacity: 0,
+      duration: 2,
+      ease: "power1",
+    },"home");
+
+    t1.from(".cen-text h3 .o",{
+      rotationY: "180deg",
+      rotationZ: "180deg",
+      left: '50%',
+      scale: 3,
+      opacity: 0,
+      duration: 2,
+      ease: "power1",
+    },"home");
+
+    t1.from(".cen-text h3 .n",{
+      rotationY: "90deg",
+      rotationZ: "90deg",
+      rotationX: "-90deg",
+      left: '45%',
+      top: "100%",
+      scale: 3,
+      opacity: 0,
+      duration: 2,
+      ease: "power1",
+    },"home");
+
+    t1.from(".cen-text h3 .t",{
+      rotationY: "-90deg",
+      rotationZ: "90deg",
+      rotationX: "-90deg",
+      left: '55%',
+      top: "70%",
+      scale: 3,
+      opacity: 0,
+      duration: 2,
+      ease: "power1",
+    },"home");
+
+    t1.from(".cen-text h3 .e",{
+      rotationY: "-90deg",
+      rotationZ: "-90deg",
+      rotationX: "-90deg",
+      left: '60%',
+      top: "95%",
+      scale: 3,
+      opacity: 0,
+      duration: 2,
+      ease: "power1",
+    },"home");
+    
+    t1.from(".cen-text h3 .end",{
+      rotationY: "-45deg",
+      rotationZ: "-45deg",
+      rotationX: "-45deg",
+      top: "90%",
+      scale: 3,
+      opacity: 0,
+      duration: 2,
+      ease: "power1",
+    },"home");
+    
+    t1.from(".cen-text h3 .d",{
+      rotationY: "-90deg",
+      rotationZ: "-90deg",
+      rotationX: "-90deg",
+      left: '60%',
+      top: "65%",
+      scale: 3,
+      opacity: 0,
+      duration: 2,
+      ease: "power1",
+    },"home");
+
+// ================================================================================================= 
+    
+    t1.from(".cen-text h3 .deve",{
+      rotationZ: "180deg",
+      rotationX: "180deg",
+      left: '70%',
+      top: '100%',
+      scale: 3,
+      opacity: 0,
+      duration: 2,
+      ease: "power1",
+    },"home");
+
+    t1.from(".cen-text h3 .ev",{
+      rotationY: "180deg",
+      rotationX: "180deg",
+      left: '70%',
+      top: '70%',
+      scale: 3,
+      opacity: 0,
+      duration: 2,
+      ease: "power1",
+    },"home");
+
+    t1.from(".cen-text h3 .ve",{
+      rotationY: "180deg",
+      rotationZ: "180deg",
+      left: '70%',
+      scale: 3,
+      opacity: 0,
+      duration: 2,
+      ease: "power1",
+    },"home");
+
+    t1.from(".cen-text h3 .el",{
+      rotationY: "90deg",
+      rotationZ: "90deg",
+      rotationX: "-90deg",
+      left: '65%',
+      top: "100%",
+      scale: 3,
+      opacity: 0,
+      duration: 2,
+      ease: "power1",
+    },"home");
+
+    t1.from(".cen-text h3 .lo",{
+      rotationY: "-90deg",
+      rotationZ: "90deg",
+      rotationX: "-90deg",
+      left: '75%',
+      top: "70%",
+      scale: 3,
+      opacity: 0,
+      duration: 2,
+      ease: "power1",
+    },"home");
+
+    t1.from(".cen-text h3 .op",{
+      rotationY: "180deg",
+      rotationZ: "180deg",
+      left: "80%",
+      scale: 3,
+      opacity: 0,
+      duration: 2,
+      ease: "power1",
+    },"home");
+    
+    t1.from(".cen-text h3 .pe",{
+      rotationY: "-45deg",
+      rotationZ: "-45deg",
+      rotationX: "-45deg",
+      top: "90%",
+      left: "88%",
+      scale: 3,
+      opacity: 0,
+      duration: 2,
+      ease: "power1",
+    },"home");
+    
+    t1.from(".cen-text h3 .er",{
+      rotationY: "-90deg",
+      rotationZ: "-90deg",
+      rotationX: "-90deg",
+      left: '90%',
+      top: "75%",
+      scale: 3,
+      opacity: 0,
+      duration: 2,
+      ease: "power1",
+    },"home");
+
+    t1.from(".cen-text h3 .rd",{
+      rotationY: "180deg",
+      rotationZ: "180deg",
+      left: "90%",
+      scale: 3,
+      opacity: 0,
+      duration: 2,
+      ease: "power1",
+    },"home");
+    
+}
 
 function home2Animation(){
-  var t2 = gsap.timeline({
+  var h2 = gsap.timeline({
     scrollTrigger:{
       trigger: "#home2",
       start: "top top",
@@ -51,42 +385,42 @@ function home2Animation(){
     }
   })
 
-  t2.to("#boxes .box1",{
+  h2.to("#boxes .box1",{
     left: '-60%',
     top: "-60%",
     duration: 3,
     ease: "power0",
   },'home2')
 
-  t2.to("#boxes .box2",{
+  h2.to("#boxes .box2",{
     left: '-35%',
     top: "-55%",
     duration: 3,
     ease: "power0",
   },'home2')
 
-  t2.to("#boxes .box3",{
+  h2.to("#boxes .box3",{
     left: '-35%',
     top: "-5%",
     duration: 3,
     ease: "power0",
   },'home2')
 
-  t2.to("#boxes .box4",{
+  h2.to("#boxes .box4",{
     height: "100%",
     width: "100%",
     duration: 2,
     ease: "power0",
   },'home2')
 
-  t2.to("#boxes .box5",{
+  h2.to("#boxes .box5",{
     left: '120%',
     top: "-60%",
     duration: 3,
     ease: "power0",
   },'home2')
 
-  t2.to("#boxes .box6",{
+  h2.to("#boxes .box6",{
     right: '-60%',
     top: "-55%",
     duration: 3,
@@ -363,7 +697,7 @@ function projectShowCaseAnimation(){
 
 }
 
-function openClose(){
+function projectShowCase(){
   
   document.querySelector("#proj-show-case .box1").addEventListener("click", function(){
     document.querySelector(".proj1-details").style.display = "initial";
@@ -444,6 +778,7 @@ function openClose(){
  
 }
 
+homeAnimation();
 
 home2Animation();
 
@@ -453,4 +788,4 @@ projectAnimation();
 
 projectShowCaseAnimation();
 
-openClose();
+projectShowCase();
