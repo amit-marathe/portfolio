@@ -26,10 +26,10 @@ html,body{
 }
 
 #cursor {
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     border-radius: 100%;
-    border: 1px dotted black;
+    border: 1px solid #3f3b3753;
     transition: all 200ms ease-out;
     position: fixed;
     pointer-events: none;
@@ -40,11 +40,11 @@ html,body{
 }
   
 #cursor2 {
-    width: 25px;
-    height: 25px;
+    width: 37px;
+    height: 37px;
     border-radius: 100%;
-    background-color: #3f3b37;
-    opacity: .5;
+    background-color: #ff007f;
+    opacity: .2;
     position: fixed;
     transform: translate(-50%, -50%);
     pointer-events: none;
@@ -67,51 +67,40 @@ html,body{
 
 #home #navbar{
     height: 12vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#navbar .icon-link{
+    height: 50%;
+    width: 15%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 5px;
+    padding-left: 20px;
 }
 
-/* #navbar .nav-left{
-    height: 100%;
-    width: 60%;
-    display: flex;
-    align-items: center;
-    padding-left: 30px;
-}
-
-.nav-left h3{
-    font-size: 1.7rem;
-    font-weight: 600;
-    color: #3f3b37;
-}
-
-#navbar .nav-right{
-    height: 100%;
-    width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    gap: 20px;
-    padding-right: 30px;
-}
-
-.nav-right a{
-    text-decoration: none;
-    font-size: 1rem;
+.icon-link h6{
+    font-size: 1.3rem;
     font-weight: 500;
     color: #3f3b37;
-    border: 1px solid #39383852;
-    border-radius: 25px;
-    padding: 1px 18px;
-    transition: all-out .2s ease-in-out;
-    text-transform: uppercase;
+    opacity: .9;
 }
 
-.nav-right a:hover{
-    border: 1.5px solid #000;
-    color: #393838;
-} */
+.icon-link a{
+    text-decoration: none;
+}
+
+.icon-link a i{
+    background-color: #3f3b37;
+    color: #f2edde;
+    padding: 4px;
+    border-radius: 0 8px 0 8px;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
 
 #home #logo{
     height: 2.9vw;
@@ -120,8 +109,8 @@ html,body{
     top: 6.5%;
     left: 2.2%;
     z-index: 9;
-    background-color: #3f3b37;
     color: #f2edde;
+    background-color: #3f3b37;
     position: fixed;
     font-family: initial;
 }
@@ -278,79 +267,25 @@ html,body{
     opacity: 1 !important;
 }
 
-#home #center{
-    height: 70vh;
-    width: 100%;
-    display: flex;
-}
-
-#center .cen-left{
-    height: 100%;
-    width: 60%;
-    padding: 80px 100px;
-    color: #3f3b37;
-}
-
-.cen-left h1{
-    font-size: 4.5rem;
-    font-weight: 600;
-    line-height: 100%;
-}
-
-.cen-left h3{
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 8px 0;
-}
-
-.cen-left p{
-    font-size: 1rem;
-    font-weight: 600;
-    padding-bottom: 8px;
-}
-
-.cen-left button{
-    padding: 6px 20px;
-    border-radius: 5px;
-    font-weight: 600;
-    font-size: .8rem;
-    color: #ffffff;
-    background-color: #393838db;
-    border: transparent;
-    transition: all 1s;
-}
-
-.cen-left button:hover{
-    color: #3f3b37;
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.452), white);
-    font-weight: 700;
-}
-
-#center .cen-right{
-    height: 100%;
-    width: 40%;
-    color: #3f3b37;
-    position: relative;
-}
-
-.cen-right>h3{
+#home .scroll-line>h3{
     font-size: 1.2rem;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1rem;
     position: absolute;
-    right: -5%;
-    top: 50%;
+    left: -1.8%;
+    top: 83.5%;
+    opacity: .8;
     transform: translate( 0, -50%) rotate(90deg);
 }
 
-.cen-right .line{
+#home .scroll-line .line{
     height: 300px;
     width: 1.5px;
     background-color: #3f3b37;
     position: absolute;
-    top: 32.5%;
-    right: 5%;
+    top: 70%;
+    left: 2.1%;
     animation: line 2s infinite alternate;
 }
 
@@ -365,6 +300,158 @@ html,body{
         height: 300px;
     }
 
+}
+
+#home #center{
+    height: 75vh;
+    width: 80%;
+    position: relative;
+    left: 12%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#center .cen-text{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.cen-text h1 span{
+    font-size: 13rem;
+    font-weight: 500;
+    color: #3f3b37;
+    position: absolute;
+}
+
+.cen-text h1 .am{
+    left: 20%;
+    top: 5%;
+}
+
+.cen-text h1 .mi{
+    left: 34%;
+    top: 5%;
+}
+
+.cen-text h1 .it{
+    left: 50%;
+    top: 5%;
+}
+
+.cen-text h1 .ta{
+    left: 57.5%;
+    top: 5%;
+}
+
+.cen-text h1 .ma{
+    left: 4.5%;
+    top: 40%;
+}
+
+.cen-text h1 .ar{
+    left: 20%;
+    top: 40%;
+}
+
+.cen-text h1 .ra{
+    left: 34%;
+    top: 40%;
+}
+
+.cen-text h1 .at{
+    left: 46.5%;
+    top: 40%;
+}
+
+.cen-text h1 .th{
+    left: 57.5%;
+    top: 40%;
+}
+
+.cen-text h1 .he{
+    left: 69%;
+    top: 40%;
+}
+
+.cen-text h1 .em{
+    left: 83%;
+    top: 40%;
+}
+
+.cen-text h3 span{
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #3f3b37;
+    position: absolute;  
+    top: 83%;
+}
+
+.cen-text h3 .f{
+    left: 45%;
+}
+
+.cen-text h3 .r{
+    left: 47.5%;
+}
+
+.cen-text h3 .o{
+    left: 50%;
+}
+
+.cen-text h3 .n{
+    left: 53%;
+}
+
+.cen-text h3 .t{
+    left: 56%;
+}
+
+.cen-text h3 .e{
+    left: 58.5%;
+}
+
+.cen-text h3 .end{
+    left: 61%;
+}
+
+.cen-text h3 .d{
+    left: 64%;
+}
+
+.cen-text h3 .deve{
+    left: 68.5%;
+}
+
+.cen-text h3 .ev{
+    left: 71.5%;
+}
+
+.cen-text h3 .ve{
+    left: 74%;
+}
+
+.cen-text h3 .el{
+    left: 76.5%;
+}
+
+.cen-text h3 .lo{
+    left: 79%;
+}
+
+.cen-text h3 .op{
+    left: 81%;
+}
+
+.cen-text h3 .pe{
+    left: 84%;
+}
+
+.cen-text h3 .er{
+    left: 86.5%;
+}
+
+.cen-text h3 .rd{
+    left: 89%;
 }
 
 /* ===============================================HOME2=============================================================== */
@@ -470,7 +557,7 @@ html,body{
 
 #home3 #strip{
     height: 25%;
-    width: 190%;
+    width: 191%;
     background-color: #3f3b37;
     position: absolute;
     border: 1px solid #f2edde;
@@ -479,11 +566,11 @@ html,body{
 }
 
 #home3 .stripes h1{
-    color: #f2edde;
     font-size: 8.5rem;
     font-weight: 500;
     text-transform: uppercase;
     padding: 0 30px 0 30px;
+    color: #f2edde;
 }
 
 #home3 .strip-one{
@@ -626,6 +713,7 @@ html,body{
     transform: translate(-50%, 0);
     opacity: 0;
     transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+    color: #3f3b37;
 }
 
 /* ===============================================PROJECTS=============================================================== */
@@ -880,7 +968,7 @@ html,body{
 #proj-show-case .box4 .box4-show-case #box4-details{
     height: 20%;
     width: 100%;
-    border-bottom: 2px solid #39383843;
+    border-top: 2px solid #3f3b3771;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -888,12 +976,12 @@ html,body{
     transition: all ease-in-out .5s;
 }
 
-#proj-show-case .box4 .box4-show-case .box4-1{
-    border-top: 2px solid #39383843;
+#proj-show-case .box4 .box4-show-case .box4-4{
+    border-bottom: 2px solid #3f3b3771;
 }
 
 #proj-show-case .box4 .box4-show-case #box4-details:hover{
-    background-color: #00000026;
+    background-color: #00000013;
     padding: 10px 30px;
 }
 
