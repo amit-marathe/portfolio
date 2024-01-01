@@ -145,7 +145,7 @@ html,body{
     position: fixed;
     top: 5%;
     right: 2.2%;
-    z-index: 9;
+    z-index: 999;
 }
 
 #menu .menu1{
@@ -233,6 +233,7 @@ html,body{
     flex-direction: column;
     gap: 40px;
     padding: 100px;
+    z-index: 99;
 }
 
 .side-box .img{
@@ -756,7 +757,7 @@ html,body{
     position: fixed;
     right: -10%;
     bottom: -20%;
-    z-index: 99;
+    z-index: 9;
 }
 
 .upper-box .box{
@@ -1332,7 +1333,7 @@ html,body{
     transform: translate(-50%, -50%);
     display: none;
     background-color: #00000087;
-    z-index: 10;
+    z-index: 999;
 }
 
 #projects #proj-details #project-details{
