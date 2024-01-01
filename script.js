@@ -1,9 +1,3 @@
-// document.querySelector("#main")
-// .addEventListener("mousemove", function(dets){
-//     document.querySelector("#cursor").style.left = dets.x + "px";
-//     document.querySelector("#cursor").style.top = dets.x + "px";
-// })
-
 var cursor = document.querySelector('#cursor');
 var cursorinner = document.querySelector('#cursor2');
 
@@ -38,25 +32,33 @@ for (var i = 0; i < close.length; i++) {
   });
 }
 
-var t2 = gsap.timeline({
+var t3 = gsap.timeline({
   scrollTrigger:{
     trigger: "#home",
-    start: "+=50px",
-    end: "+=2000px",
-    markers: true,
+    start: "top",
+    end: "6600px",
     scrub: 1,
   }
 })
 
-t2.to(".cen-text h1 .am, .mi, .it, .ta",{
-  x: '-1000',
-  duration: 3,
-},"home")
+t3.to("#circle",{
+  rotation: "360deg",
+  ease: "power1"
+})
 
-t2.to(".cen-text h1 .ma, .ar, .ra, .at, .th, .he, .em",{
-  x: '1000',
-  duration: 3,
-},"home")
+var t4 = gsap.timeline({
+  scrollTrigger:{
+    trigger: "#home",
+    start: "+500px",
+    end: "bottom",
+    scrub: 1,
+  }
+})
+
+t4.to(".upper-box .box",{
+  backgroundColor: "rgb(63, 59, 55)",
+})
+
 
 function homeAnimation(){
   
@@ -69,7 +71,7 @@ function homeAnimation(){
         top: "-15%",
         scale: 3,
         opacity: 0,
-        duration: 2,
+        duration: 2.5,
         ease: "power1",
       },"home");
 
@@ -80,7 +82,7 @@ function homeAnimation(){
         top: "-15%",
         scale: 3,
         opacity: 0,
-        duration: 2,
+        duration: 2.5,
         ease: "power1",
       },"home");
 
@@ -89,7 +91,7 @@ function homeAnimation(){
         rotationY: "90deg",
         scale: 3,
         opacity: 0,
-        duration: 2,
+        duration: 2.5,
         ease: "power1",
       },"home");
 
@@ -99,7 +101,7 @@ function homeAnimation(){
         right: "15%",
         scale: 3,
         opacity: 0,
-        duration: 2,
+        duration: 2.5,
         ease: "power1",
       },"home");
 
@@ -109,7 +111,7 @@ function homeAnimation(){
         top: "80%",
         scale: 3,
         opacity: 0,
-        duration: 2,
+        duration: 2.5,
         ease: "power1",
       },"home");
 
@@ -120,7 +122,7 @@ function homeAnimation(){
       top: '70%',
       scale: 3,
       opacity: 0,
-      duration: 2,
+      duration: 2.5,
       ease: "power1",
     },"home");
 
@@ -129,7 +131,7 @@ function homeAnimation(){
       top: '90%',
       scale: 3,
       opacity: 0,
-      duration: 2,
+      duration: 2.5,
       ease: "power1",
     },"home");
 
@@ -139,7 +141,7 @@ function homeAnimation(){
       top: '70%',
       scale: 3,
       opacity: 0,
-      duration: 2,
+      duration: 2.5,
       ease: "power1",
     },"home");
 
@@ -150,7 +152,7 @@ function homeAnimation(){
       top: '70%',
       scale: 3,
       opacity: 0,
-      duration: 2,
+      duration: 2.5,
       ease: "power1",
     },"home");
     
@@ -160,7 +162,7 @@ function homeAnimation(){
       top: '10%',
       scale: 3,
       opacity: 0,
-      duration: 2,
+      duration: 2.5,
       ease: "power1",
     },"home");
     
@@ -172,20 +174,20 @@ function homeAnimation(){
       top: '80%',
       scale: 3,
       opacity: 0,
-      duration: 2,
+      duration: 2.5,
       ease: "power1",
     },"home");
 
-// ================================================================================================= 
+// =================================== frontend ============================================================== 
 
     t1.from(".cen-text h3 .f",{
       rotationZ: "180deg",
       rotationX: "180deg",
-      left: '50%',
+      left: '55%',
       top: '100%',
       scale: 3,
       opacity: 0,
-      duration: 2,
+      duration: 2.5,
       ease: "power1",
     },"home");
 
@@ -196,17 +198,17 @@ function homeAnimation(){
       top: '70%',
       scale: 3,
       opacity: 0,
-      duration: 2,
+      duration: 2.5,
       ease: "power1",
     },"home");
 
     t1.from(".cen-text h3 .o",{
       rotationY: "180deg",
       rotationZ: "180deg",
-      left: '50%',
+      left: '55%',
       scale: 3,
       opacity: 0,
-      duration: 2,
+      duration: 2.5,
       ease: "power1",
     },"home");
 
@@ -214,11 +216,11 @@ function homeAnimation(){
       rotationY: "90deg",
       rotationZ: "90deg",
       rotationX: "-90deg",
-      left: '45%',
+      left: '50%',
       top: "100%",
       scale: 3,
       opacity: 0,
-      duration: 2,
+      duration: 2.5,
       ease: "power1",
     },"home");
 
@@ -226,11 +228,11 @@ function homeAnimation(){
       rotationY: "-90deg",
       rotationZ: "90deg",
       rotationX: "-90deg",
-      left: '55%',
+      left: '65%',
       top: "70%",
       scale: 3,
       opacity: 0,
-      duration: 2,
+      duration: 2.5,
       ease: "power1",
     },"home");
 
@@ -238,11 +240,11 @@ function homeAnimation(){
       rotationY: "-90deg",
       rotationZ: "-90deg",
       rotationX: "-90deg",
-      left: '60%',
+      left: '65%',
       top: "95%",
       scale: 3,
       opacity: 0,
-      duration: 2,
+      duration: 2.5,
       ease: "power1",
     },"home");
     
@@ -253,7 +255,7 @@ function homeAnimation(){
       top: "90%",
       scale: 3,
       opacity: 0,
-      duration: 2,
+      duration: 2.5,
       ease: "power1",
     },"home");
     
@@ -261,24 +263,24 @@ function homeAnimation(){
       rotationY: "-90deg",
       rotationZ: "-90deg",
       rotationX: "-90deg",
-      left: '60%',
+      left: '70%',
       top: "65%",
       scale: 3,
       opacity: 0,
-      duration: 2,
+      duration: 2.5,
       ease: "power1",
     },"home");
 
-// ================================================================================================= 
+// ====================================== developer =========================================================== 
     
     t1.from(".cen-text h3 .deve",{
       rotationZ: "180deg",
       rotationX: "180deg",
-      left: '70%',
+      left: '75%',
       top: '100%',
       scale: 3,
       opacity: 0,
-      duration: 2,
+      duration: 2.5,
       ease: "power1",
     },"home");
 
@@ -289,7 +291,7 @@ function homeAnimation(){
       top: '70%',
       scale: 3,
       opacity: 0,
-      duration: 2,
+      duration: 2.5,
       ease: "power1",
     },"home");
 
@@ -299,7 +301,7 @@ function homeAnimation(){
       left: '70%',
       scale: 3,
       opacity: 0,
-      duration: 2,
+      duration: 2.5,
       ease: "power1",
     },"home");
 
@@ -307,11 +309,11 @@ function homeAnimation(){
       rotationY: "90deg",
       rotationZ: "90deg",
       rotationX: "-90deg",
-      left: '65%',
+      left: '70%',
       top: "100%",
       scale: 3,
       opacity: 0,
-      duration: 2,
+      duration: 2.5,
       ease: "power1",
     },"home");
 
@@ -323,7 +325,7 @@ function homeAnimation(){
       top: "70%",
       scale: 3,
       opacity: 0,
-      duration: 2,
+      duration: 2.5,
       ease: "power1",
     },"home");
 
@@ -333,7 +335,7 @@ function homeAnimation(){
       left: "80%",
       scale: 3,
       opacity: 0,
-      duration: 2,
+      duration: 2.5,
       ease: "power1",
     },"home");
     
@@ -345,7 +347,7 @@ function homeAnimation(){
       left: "88%",
       scale: 3,
       opacity: 0,
-      duration: 2,
+      duration: 2.5,
       ease: "power1",
     },"home");
     
@@ -357,7 +359,7 @@ function homeAnimation(){
       top: "75%",
       scale: 3,
       opacity: 0,
-      duration: 2,
+      duration: 2.5,
       ease: "power1",
     },"home");
 
@@ -367,10 +369,115 @@ function homeAnimation(){
       left: "90%",
       scale: 3,
       opacity: 0,
-      duration: 2,
+      duration: 2.5,
       ease: "power1",
     },"home");
+
+// ==================================================================================================================== 
+
+    var t2 = gsap.timeline({
+      scrollTrigger:{
+        trigger: "#home",
+        start: "+=50px",
+        end: "+=2000px",
+        scrub: 1,
+      }
+    })
     
+    t2.to(".cen-text h1 .am, .mi, .it, .ta",{
+      x: '-1000',
+      duration: 3,
+    },"home")
+    
+    t2.to(".cen-text h1 .ma, .ar, .ra, .at, .th, .he, .em",{
+      x: '1000',
+      duration: 3,
+    },"home")
+    
+    t2.to(".cen-text h3 .f",{
+      y: '-200',
+    },"home")
+    
+    t2.to(".cen-text h3 .r",{
+      y: '-200',
+      delay: .02
+    },"home")
+    
+    t2.to(".cen-text h3 .o",{
+      y: '-200',
+      delay: .04
+    },"home")
+    
+    t2.to(".cen-text h3 .n",{
+      y: '-200',
+      delay: .06
+    },"home")
+    
+    t2.to(".cen-text h3 .t",{
+      y: '-200',
+      delay: .08
+    },"home")
+    
+    t2.to(".cen-text h3 .e",{
+      y: '-200',
+      delay: .1
+    },"home")
+    
+    t2.to(".cen-text h3 .end",{
+      y: '-200',
+      delay: .12
+    },"home")
+    
+    t2.to(".cen-text h3 .d",{
+      y: '-200',
+      delay: .14
+    },"home")
+    
+    t2.to(".cen-text h3 .deve",{
+      y: '-200',
+      delay: .17
+    },"home")
+    
+    t2.to(".cen-text h3 .ev",{
+      y: '-200',
+      delay: .19
+    },"home")
+    
+    t2.to(".cen-text h3 .ve",{
+      y: '-200',
+      delay: .21
+    },"home")
+    
+    t2.to(".cen-text h3 .el",{
+      y: '-200',
+      delay: .23
+    },"home")
+    
+    t2.to(".cen-text h3 .lo",{
+      y: '-200',
+      delay: .25
+    },"home")
+    
+    t2.to(".cen-text h3 .op",{
+      y: '-200',
+      delay: .27
+    },"home")
+    
+    t2.to(".cen-text h3 .pe",{
+      y: '-200',
+      delay: .29
+    },"home")
+    
+    t2.to(".cen-text h3 .er",{
+      y: '-200',
+      delay: .31
+    },"home")
+    
+    t2.to(".cen-text h3 .rd",{
+      y: '-200',
+      delay: .33
+    },"home")
+     
 }
 
 function home2Animation(){
