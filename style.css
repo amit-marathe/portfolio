@@ -757,7 +757,7 @@ html,body{
     position: fixed;
     right: -10%;
     bottom: -20%;
-    z-index: 9;
+    z-index: 99;
 }
 
 .upper-box .box{
@@ -767,7 +767,6 @@ html,body{
     position: absolute;
     left: 40%;
     top: 40%;
-    cursor: default;
 }
 
 .upper-box .box i{
