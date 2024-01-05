@@ -233,7 +233,7 @@ html,body{
     flex-direction: column;
     gap: 40px;
     padding: 100px;
-    z-index: 99;
+    z-index: 100;
 }
 
 .side-box .img{
@@ -757,7 +757,7 @@ html,body{
     position: fixed;
     right: -10%;
     bottom: -20%;
-    z-index: 100;
+    z-index: 99;
 }
 
 .upper-box .box{
