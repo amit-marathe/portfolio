@@ -514,8 +514,8 @@ function home2Animation(){
   },'home2')
 
   h2.to("#boxes .box4",{
-    height: "100%",
-    width: "100%",
+    height: "90%",
+    width: "90%",
     duration: 2,
     ease: "power0",
   },'home2')
@@ -540,7 +540,7 @@ function home3Animation(){
   var h3 = gsap.timeline({
     scrollTrigger:{
       trigger: "#home3",
-      start: "-350px",
+      start: "-600px",
       end: "+500px",
       scrub: 1,
       // markers: true,
@@ -550,35 +550,35 @@ function home3Animation(){
   h3.to("#home3 .strip-one",{
     left: "120%",
     top: "-30%",
-    delay: .2,
+    delay: .7,
     duration: 4
   },"home3")
 
   h3.to("#home3 .strip-two",{
     left: "-200%",
     top: "150%",
-    delay: .2,
+    delay: .7,
     duration: 4
   },"home3")
 
   h3.to("#home3 .strip-three",{
     left: "-200%",
     top: "-55%",
-    delay: .2,
+    delay: .7,
     duration: 4
   },"home3")
 
   h3.to("#home3 .strip-four",{
     left: "-200%",
     top: "5%",
-    delay: .2,
+    delay: .7,
     duration: 4
   },"home3")
   
   h3.to("#home3 .strip-five",{
     left: "120%",
     top: "75%",
-    delay: .2,
+    delay: .7,
     duration: 4
   },"home3")
 
@@ -656,7 +656,7 @@ function home3Animation(){
   h3.to(".home3-text h1 .cs",{
     opacity: 1,
     scale: 1,
-    delay: 2.3
+    delay: 2.2
   },"home3")
   
   h3.to(".home3-text h2",{
