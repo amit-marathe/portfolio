@@ -905,6 +905,14 @@ function myFunction(x) {
       document.querySelector(".side-box").style.right = "-100%";
       document.querySelector(".menu2").style.display = "initial";
     })
+
+    var close = document.querySelectorAll(".side-box a");
+    for (var i = 0; i < close.length; i++) {
+      close[i].addEventListener("click", function () {
+        document.querySelector(".side-box").style.right = "-100%";
+        document.querySelector(".menu3").style.display = "none";
+  });
+}
   } else {
     console.error(error);
   }
