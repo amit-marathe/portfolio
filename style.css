@@ -36,7 +36,7 @@ html,body{
     left: 0;
     top: 0;
     transform: translate(calc(-50% + 15px), -50%);
-    z-index: 999;
+    z-index: 9999;
 }
   
 #cursor2 {
@@ -49,7 +49,7 @@ html,body{
     transform: translate(-50%, -50%);
     pointer-events: none;
     transition: width .3s, height .3s, opacity .3s;
-    z-index: 999;
+    z-index: 9999;
 }
 
 #main{
@@ -261,6 +261,10 @@ html,body{
     z-index: 9;
 }
 
+.side-box a:hover{
+    opacity: 1 !important;
+}
+
 /*--------------------------------------- side-box-ends -----------------------------------------------*/
 
 /*--------------------------------------- scroll-line-start -----------------------------------------------*/
@@ -271,10 +275,6 @@ html,body{
     opacity: .6;
     background-color: #f2edde;
     transition: all ease-in-out .3s;
-}
-
-.side-box a:hover{
-    opacity: 1 !important;
 }
 
 .side-box a:hover .line{
@@ -1521,3 +1521,150 @@ html,body{
 }
 
 /* ==================================================================================================================== */
+
+
+/* =============================================== Media-Querry ===================================================================== */
+
+@media screen and (max-width:480px) and (min-width:320px) {
+    #cursor{
+        display: none;
+    }
+
+    #cursor2{
+        display: none;
+    }
+
+    #main{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #main #home{
+        width: 100%;
+        position: relative;
+    }
+
+    #home #navbar .icon-link{
+        position: absolute;
+        top: -5%;
+        left: 30%;
+    }
+
+    #home #navbar .icon-link h6{
+        font-size: .9rem;
+        font-weight: 400;
+        white-space: nowrap;
+    }
+
+    #home #navbar .icon-link a i{        
+        font-size: .7rem;
+        padding: 1px 3px;
+        position: absolute;
+        top: 46.5%;
+        border-radius: 0 6px 0 6px;
+    }
+
+    #home #logo{
+        position: fixed;
+        height: 12vw;
+        width: 12vw;
+        left: 5%;
+        top: 5%;
+        z-index: 999;
+    }
+
+    #home #menu{
+        position: fixed;
+        height: 15vw;
+        width: 15vw;
+        top: 5%;
+        right: 5%;
+    }
+    
+    #menu .menu1{        
+        height: 12vw;
+        width: 12vw;
+        right: 10%;
+        top: 10%;
+    }
+
+    #menu .menu2{
+        height: 12vw;
+        width: 12vw;
+        right: 0%;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #home #menu:hover .menu2{
+        right: 0;
+        top: 0;
+    }
+
+    #menu .menu2 .line{
+        height: 3px;
+        width: 55%;
+        background-color: red;
+        opacity: .8;
+    }
+
+    #menu .menu3{
+        height: 12vw;
+        width: 12vw;
+        display: none;
+        right: 0;
+    }
+
+    #menu .menu3 h6{
+        font-size: 3rem;
+        font-weight: 400;
+        position: absolute;
+        top: 40%;
+        opacity: .8;
+    }
+
+    #home #menu:hover .menu3{
+        right: 0;
+        top: 0;
+    }
+
+    #home .side-box{
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        right: -100%;
+    }
+
+    #home .side-box .img{
+        height: 100%;
+        width: 100%;
+        background-color: #3f3b37;
+    }
+
+    #home .side-box .img img{
+        display: none;
+    }
+
+    #home .side-box a{
+        font-size: 1rem;
+        font-weight: 500;
+        opacity: 1;
+        padding-left: 50px;
+    }
+
+    .side-box .line{
+        height: 1.5px;
+        width: 0%;
+        position: absolute;
+        left: 10%;
+        opacity: 1;
+    }
+
+    .side-box a:hover .line{
+        width: 80%;
+    }
+}
