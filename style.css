@@ -1546,7 +1546,7 @@ html,body{
 
     #home #navbar .icon-link{
         position: absolute;
-        top: -5%;
+        top: 0;
         left: 30%;
     }
 
@@ -1560,7 +1560,7 @@ html,body{
         font-size: .7rem;
         padding: 1px 3px;
         position: absolute;
-        top: 46.5%;
+        top: 46%;
         border-radius: 0 6px 0 6px;
     }
 
@@ -1593,11 +1593,6 @@ html,body{
         width: 12vw;
         right: 0%;
         top: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 5px;
     }
 
     #home #menu:hover .menu2{
@@ -1608,8 +1603,6 @@ html,body{
     #menu .menu2 .line{
         height: 3px;
         width: 55%;
-        background-color: red;
-        opacity: .8;
     }
 
     #menu .menu3{
@@ -1624,7 +1617,7 @@ html,body{
         font-weight: 400;
         position: absolute;
         top: 40%;
-        opacity: .8;
+        opacity: .9;
     }
 
     #home #menu:hover .menu3{
@@ -1667,4 +1660,264 @@ html,body{
     .side-box a:hover .line{
         width: 80%;
     }
+
+    #home #center{
+        width: 100%;
+        left: 0;
+    }    
+
+    #center .cen-text{
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+    .cen-text h1 span{
+        font-size: 4.5rem;
+    }
+
+    .cen-text h1 .am{
+        left: 20%;
+        top: 25%;
+    }
+    
+    .cen-text h1 .mi{
+        left: 38%;
+        top: 25%;
+    }
+    
+    .cen-text h1 .it{
+        left: 62%;
+        top: 25%;
+    }
+    
+    .cen-text h1 .ta{
+        left: 74%;
+        top: 25%;
+    }
+    
+    .cen-text h1 .ma{
+        left: 1%;
+        top: 40%;
+    }
+    
+    .cen-text h1 .ar{
+        left: 19%;
+        top: 40%;
+    }
+    
+    .cen-text h1 .ra{
+        left: 33%;
+        top: 40%;
+    }
+    
+    .cen-text h1 .at{
+        left: 47%;
+        top: 40%;
+    }
+    
+    .cen-text h1 .th{
+        left: 58.5%;
+        top: 40%;
+    }
+    
+    .cen-text h1 .he{
+        left: 71.5%;
+        top: 40%;
+    }
+    
+    .cen-text h1 .em{
+        left: 86%;
+        top: 40%;
+    }
+
+    .cen-text h3 span{
+        font-size: 1.7rem;
+        font-weight: 500;
+        top: 55%;
+    }
+
+    .cen-text h3 .f{
+        left: 2%;
+    }
+    
+    .cen-text h3 .r{
+        left: 7%;
+    }
+    
+    .cen-text h3 .o{
+        left: 12.5%;
+    }
+    
+    .cen-text h3 .n{
+        left: 18%;
+    }
+    
+    .cen-text h3 .t{
+        left: 24%;
+    }
+    
+    .cen-text h3 .e{
+        left: 29.5%;
+    }
+    
+    .cen-text h3 .end{
+        left: 35%;
+    }
+    
+    .cen-text h3 .d{
+        left: 41%;
+    }
+    
+    .cen-text h3 .deve{
+        left: 50%;
+    }
+    
+    .cen-text h3 .ev{
+        left: 55.5%;
+    }
+    
+    .cen-text h3 .ve{
+        left: 61%;
+    }
+    
+    .cen-text h3 .el{
+        left: 66.5%;
+    }
+    
+    .cen-text h3 .lo{
+        left: 72%;
+    }
+    
+    .cen-text h3 .op{
+        left: 76.5%;
+    }
+    
+    .cen-text h3 .pe{
+        left: 83%;
+    }
+    
+    .cen-text h3 .er{
+        left: 88.5%;
+    }
+    
+    .cen-text h3 .rd{
+        left: 93.5%;
+    }
+
+    #home .scroll-line{
+        display: none;
+    }
+
+    #home #circle{
+        height: 70vw;
+        width: 70vw;
+        position: fixed;
+        /* right:   -25%;
+        bottom: -10%; */
+        right: 20%;
+        bottom: 20%;
+        background-color: yellow;
+    }
+
+    .circle-text h4 span{
+        font-size: 1rem;
+        font-weight: 400;
+     }
+
+     .circle-text h4 .explore-dot1{
+        left: 86%;
+        top: 11%;
+        font-size: 1.8rem;
+        font-weight: 600;
+        opacity: .9;
+    }
+    
+    .circle-text h4 .explore-dot2{
+        left: 89%;
+        top: 16%;
+        font-size: 1.8rem;
+        font-weight: 600;
+        opacity: .9;
+    }
+
+    .circle-text h4 .transform-dot1{
+        right: 26%;
+        bottom: 2%;
+        font-size: 1.8rem;
+        font-weight: 600;
+        opacity: .9;
+    }
+    
+    .circle-text h4 .transform-dot2{
+        right: 32%;
+        bottom: 0%;
+        font-size: 1.8rem;
+        font-weight: 600;
+        opacity: .9;
+    }
+
+    .circle-text h4 .discover-dot-1{
+        left: 6%;
+        bottom: 24%;
+        font-size: 1.8rem;
+        font-weight: 600;
+        opacity: .9;
+    }
+    
+    .circle-text h4 .discover-dot-2{
+        left: 3%;
+        bottom: 30%;
+        font-size: 1.8rem;
+        font-weight: 600;
+        opacity: .9;
+    }
+    
+    .circle-text h4 .connect-o{
+        left: .5%;
+        top: 46%;
+        rotate: -95deg;
+    }
+    
+    .circle-text h4 .connect-n{
+        left: 1.5%;
+        top: 37%;
+        rotate: -80deg;
+    }
+
+    .circle-text h4 .connect-dot-1{
+        left: 24%;
+        top: 0%;    
+        font-size: 1.8rem;
+        font-weight: 600;
+        opacity: .9;
+    }
+    
+    .circle-text h4 .connect-dot-2{
+        left: 29%;
+        top: -3%;    
+        font-size: 1.8rem;
+        font-weight: 600;
+        opacity: .9;
+    }
+
+    /* #home .upper-box{
+        height: 70vw;
+        width: 70vw;
+        background-color: rgba(245, 172, 172, 0.242);
+        position: fixed;
+        right:   20%;
+        bottom: 20%;
+        z-index: 99;
+    }
+    
+    .upper-box .box{
+        height: 20vw;
+        width: 20vw;
+        background-color: #3f3b3765;
+        position: absolute;
+        left: 40%;
+        top: 40%;
+    } */
+    
 }
