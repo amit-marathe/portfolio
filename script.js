@@ -896,3 +896,27 @@ projectAnimation();
 projectShowCaseAnimation();
 
 projectShowCase();
+
+/* =============================================== Media-Querry ===================================================================== */
+
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    document.querySelector(".menu3").addEventListener("click", function(){
+      document.querySelector(".side-box").style.right = "-100%";
+      document.querySelector(".menu2").style.display = "initial";
+    })
+  } else {
+    console.error(error);
+  }
+}
+
+// Create a MediaQueryList object
+var x = window.matchMedia("(max-width: 480px)")
+
+// Call listener function at run time
+myFunction(x);
+
+// Attach listener function on state changes
+x.addEventListener("change", function() {
+  myFunction(x);
+});
