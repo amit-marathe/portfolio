@@ -1054,81 +1054,60 @@ html,body{
     position: relative;
 }
 
-#proj-text-area h1{
+#proj-text-area h1 span{
     font-size: 11rem;
     font-weight: 700;
     text-transform: uppercase;
+    transform: translate(0, -50%);
+    opacity: 0;
+    transition: all ease-in;
 }
 
 #proj-text-area h1 .p{
     position: absolute;
     top: 70%;
     left: 20%;
-    transform: translate(0, -50%);
-    opacity: 0;
-    transition: all ease-in;
 }
 
 #proj-text-area h1 .r{
     position: absolute;
     top: 70%;
     left: 28%;
-    transform: translate(0, -50%);
-    opacity: 0;
-    transition: all ease-in;
 }
 #proj-text-area h1 .o{
     position: absolute;
     top: 70%;
     left: 36.5%;
-    transform: translate(0, -50%);
-    opacity: 0;
-    transition: all ease-in;
 }
 
 #proj-text-area h1 .j{
     position: absolute;
     top: 70%;
     left: 46%;
-    transform: translate(0, -50%);
-    opacity: 0;
-    transition: all ease-in;
 }
 
 #proj-text-area h1 .e{
     position: absolute;
     top: 70%;
     left: 52%;
-    transform: translate(0, -50%);
-    opacity: 0;
-    transition: all ease-in;
 }
 
 #proj-text-area h1 .c{
     position: absolute;
     top: 70%;
     left: 59.5%;
-    transform: translate(0, -50%);
-    opacity: 0;
-    transition: all ease-in;
 }
 
 #proj-text-area h1 .t{
     position: absolute;
     top: 70%;
     left: 68%;
-    transform: translate(0, -50%);
-    opacity: 0;
-    transition: all ease-in;
 }
 
 #proj-text-area h1 .s{
     position: absolute;
     top: 70%;
     left: 76%;
-    transform: translate(0, -50%);
-    opacity: 0;
-    transition: all ease-in;
 }
 
 #proj-text-area>p{
@@ -1525,6 +1504,8 @@ html,body{
 
 /* =============================================== Media-Querry ===================================================================== */
 
+/* =============================================== HOME ===================================================================== */
+
 @media screen and (max-width:480px) and (min-width:320px) {
     #cursor{
         display: none;
@@ -1813,11 +1794,8 @@ html,body{
         height: 70vw;
         width: 70vw;
         position: fixed;
-        /* right:   -25%;
-        bottom: -10%; */
-        right: 20%;
-        bottom: 20%;
-        background-color: yellow;
+        right:   -25%;
+        bottom: -10%;
     }
 
     .circle-text h4 span{
@@ -1901,23 +1879,102 @@ html,body{
         opacity: .9;
     }
 
-    /* #home .upper-box{
+    #home .upper-box{
         height: 70vw;
         width: 70vw;
-        background-color: rgba(245, 172, 172, 0.242);
-        position: fixed;
-        right:   20%;
-        bottom: 20%;
-        z-index: 99;
+        right: -25%;
+        bottom: -10%;
     }
     
     .upper-box .box{
-        height: 20vw;
-        width: 20vw;
-        background-color: #3f3b3765;
-        position: absolute;
-        left: 40%;
-        top: 40%;
-    } */
+        height: 12vw;
+        width: 12vw;
+
+    }
+
+    .upper-box .box i{
+        font-size: 4rem;
+        top: -60%;
+        left: -25%;
+    }
+
+/* =============================================== HOME2 ===================================================================== */
+
+    #main #home2{
+        display: none;
+    }
+
+/* =============================================== HOME3 ===================================================================== */
+
+    #main #home3{
+        display: none;
+    }
+
+/* =============================================== PROJECTS ===================================================================== */
     
+    #main #projects{
+        width: 100%;
+        position: relative;
+        padding: 0;
+    }
+
+    #proj-text-area h1 span{
+        font-size: 4.5rem;
+        font-weight: 700;
+    }
+
+    #proj-text-area h1 .p{
+        top: 40%;
+        left: 1%;
+    }
+    
+    #proj-text-area h1 .r{
+        top: 40%;
+        left: 13%;
+    }
+    #proj-text-area h1 .o{
+        top: 40%;
+        left: 25.5%;
+    }
+    
+    #proj-text-area h1 .j{
+        top: 40%;
+        left: 38.5%;
+    }
+    
+    #proj-text-area h1 .e{
+        top: 40%;
+        left: 49%;
+    }
+    
+    #proj-text-area h1 .c{
+        top: 40%;
+        left: 61%;
+    }
+    
+    #proj-text-area h1 .t{
+        top: 40%;
+        left: 74%;
+    }
+    
+    #proj-text-area h1 .s{
+        top: 40%;
+        left: 86%;
+    }
+
+    #proj-text-area>p{
+        font-size: 1.1rem;
+        font-weight: 400;
+        padding-top: 90px;
+        opacity: .9;
+    }
+    
+    #proj-text-area .dots{
+        font-size: .8rem;
+        opacity: .9;
+    }
+
+    #main #contact{
+        display: none;
+    }
 }
