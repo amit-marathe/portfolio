@@ -673,61 +673,60 @@ function projectAnimation(){
       start: "-600px",
       end: "-400px",
       scrub: 1,
-      // stagger: 1,
       // markers: true
     }
   })
 
   p1.to("#proj-text-area h1 .p",{
-    top: "45%",
+    top: "25%",
     opacity: 1,
     duration: 1
   },"same1")
 
   p1.to("#proj-text-area h1 .r",{
-    top: "45%",
+    top: "25%",
     opacity: 1,
     duration: 1,
     delay: 1,
   },"same1")
 
   p1.to("#proj-text-area h1 .o",{
-    top: "45%",
+    top: "25%",
     opacity: 1,
     duration: 1,
     delay: 1,
   },"same1")
 
   p1.to("#proj-text-area h1 .j",{
-    top: "45%",
+    top: "25%",
     opacity: 1,
     duration: 1,
     delay: 1.5
   },"same1")
 
   p1.to("#proj-text-area h1 .e",{
-    top: "45%",
+    top: "25%",
     opacity: 1,
     duration: 1,
     delay: 1.5,
   },"same1")
 
   p1.to("#proj-text-area h1 .c",{
-    top: "45%",
+    top: "25%",
     opacity: 1,
     duration: 1,
     delay: 2,
   },"same1")
 
   p1.to("#proj-text-area h1 .t",{
-    top: "45%",
+    top: "25%",
     opacity: 1,
     duration: 1,
     delay: 2,
   },"same1")
 
   p1.to("#proj-text-area h1 .s",{
-    top: "45%",
+    top: "25%",
     opacity: 1,
     duration: 1,
     delay: 2.25,
@@ -899,6 +898,8 @@ projectShowCase();
 
 /* =============================================== Media-Querry ===================================================================== */
 
+/* =============================================== HOME ===================================================================== */
+
 function myFunction(x) {
   if (x.matches) { // If media query matches
     document.querySelector(".menu3").addEventListener("click", function(){
@@ -914,7 +915,7 @@ function myFunction(x) {
   });
 }
   } else {
-    console.error(error);
+    console.log(error);
   }
 }
 
@@ -928,3 +929,6 @@ myFunction(x);
 x.addEventListener("change", function() {
   myFunction(x);
 });
+
+/* =============================================== PROJECTS ===================================================================== */
+
