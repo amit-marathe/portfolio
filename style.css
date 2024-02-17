@@ -1111,10 +1111,10 @@ html,body{
 }
 
 #proj-text-area>p{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
-    padding-top: 275px;
+    padding-top: 210px;
     opacity: .8;
 }
 
@@ -1921,6 +1921,8 @@ html,body{
     #proj-text-area h1 span{
         font-size: 4.5rem;
         font-weight: 700;
+        opacity: 0;
+        transition: all ease-in-out;
     }
 
     #proj-text-area h1 .p{
@@ -1965,14 +1967,89 @@ html,body{
     #proj-text-area>p{
         font-size: 1.1rem;
         font-weight: 400;
-        padding-top: 90px;
+        padding-top: 60px;
         opacity: .9;
     }
     
     #proj-text-area .dots{
+        padding: 0;
         font-size: .8rem;
         opacity: .9;
+    }   
+    
+/* ============================================================================================================================== */
+
+    #projects #proj-show-case{
+        height: 300vh;
+        background-color: yellowgreen;
     }
+
+    #proj-show-case .box-text-area{
+        height: 30%;
+        width: 100%;
+    }
+
+    #proj-show-case .box-text-area h1{
+        font-size: 3.5rem;
+        font-weight: 600;
+        top: 0%;
+        right: -2%;
+    }
+    
+    #proj-show-case .box-text-area h2{
+        font-size: 1.75rem;
+        top: 50%;
+        right: 0;
+    }
+
+    #proj-show-case .img-box{
+        height: 70%;
+        width: 100%;
+    }
+
+    #proj-show-case .img-box .img-overlay{
+        display: none;
+    }
+
+    #proj-show-case .box1{
+        height: 50vh;
+        width: 90%;
+        flex-direction: column;
+        left: 5%;
+        scale: 1;
+        top: 3%;
+    }
+    
+    #proj-show-case .box2{
+        height: 50vh;
+        width: 90%;
+        flex-direction: column;
+        left: 5%;
+        scale: 1;
+        top: 23%;
+    }   
+
+    #proj-show-case .box2 .box-text-area h1{
+        font-size: 3.5rem;
+        font-weight: 600;
+        top: 0%;
+        left: -2%;
+    }
+
+    #proj-show-case .box2 .box-text-area h2{
+        font-size: 1.75rem;
+        top: 50%;
+        left: 0;
+    }
+
+    #proj-show-case .box3{
+        height: 50vh;
+        width: 90%;
+        flex-direction: column;
+        left: 5%;
+        scale: 1;
+        top: 43%;
+    }    
 
     #main #contact{
         display: none;
