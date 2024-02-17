@@ -678,55 +678,55 @@ function projectAnimation(){
   })
 
   p1.to("#proj-text-area h1 .p",{
-    top: "25%",
+    top: "30%",
     opacity: 1,
     duration: 1
   },"same1")
 
   p1.to("#proj-text-area h1 .r",{
-    top: "25%",
+    top: "30%",
     opacity: 1,
     duration: 1,
     delay: 1,
   },"same1")
 
   p1.to("#proj-text-area h1 .o",{
-    top: "25%",
+    top: "30%",
     opacity: 1,
     duration: 1,
     delay: 1,
   },"same1")
 
   p1.to("#proj-text-area h1 .j",{
-    top: "25%",
+    top: "30%",
     opacity: 1,
     duration: 1,
     delay: 1.5
   },"same1")
 
   p1.to("#proj-text-area h1 .e",{
-    top: "25%",
+    top: "30%",
     opacity: 1,
     duration: 1,
     delay: 1.5,
   },"same1")
 
   p1.to("#proj-text-area h1 .c",{
-    top: "25%",
+    top: "30%",
     opacity: 1,
     duration: 1,
     delay: 2,
   },"same1")
 
   p1.to("#proj-text-area h1 .t",{
-    top: "25%",
+    top: "30%",
     opacity: 1,
     duration: 1,
     delay: 2,
   },"same1")
 
   p1.to("#proj-text-area h1 .s",{
-    top: "25%",
+    top: "30%",
     opacity: 1,
     duration: 1,
     delay: 2.25,
@@ -742,7 +742,6 @@ function projectShowCaseAnimation(){
       end: "-350px",
       scrub: 1,
       // markers: true,
-      // pin: true
     }
   })
 
@@ -904,7 +903,7 @@ function myFunction(x) {
   if (x.matches) { // If media query matches
     document.querySelector(".menu3").addEventListener("click", function(){
       document.querySelector(".side-box").style.right = "-100%";
-      document.querySelector(".menu2").style.display = "initial";
+      document.querySelector(".menu2").style.display = "flex";
     })
 
     var close = document.querySelectorAll(".side-box a");
@@ -913,7 +912,70 @@ function myFunction(x) {
         document.querySelector(".side-box").style.right = "-100%";
         document.querySelector(".menu3").style.display = "none";
   });
-}
+
+/* =============================================== PROJECTS ===================================================================== */
+
+    function projectanimation(){
+      var p1 = gsap.timeline({
+        scrollTrigger:{
+          trigger: "#proj-text-area",
+          start: "-600px",
+          end: "-300px",
+          scrub: 1,
+        }
+      })
+
+      p1.to("#proj-text-area h1 .p",{
+        top: "5%",
+        duration: 1,
+        delay: .5
+      },"same1")
+
+      p1.to("#proj-text-area h1 .r",{
+        top: "5%",
+        duration: 1,
+        delay: 1
+      },"same1")
+
+      p1.to("#proj-text-area h1 .o",{
+        top: "5%",
+        duration: 1,
+        delay: 1
+      },"same1")
+
+      p1.to("#proj-text-area h1 .j",{
+        top: "5%",
+        duration: 1,
+        delay: 1.5
+      },"same1")
+
+      p1.to("#proj-text-area h1 .e",{
+        top: "5%",
+        duration: 1,
+        delay: 1.5
+      },"same1")
+
+      p1.to("#proj-text-area h1 .c",{
+        top: "5%",
+        duration: 1,
+        delay: 2
+      },"same1")
+
+      p1.to("#proj-text-area h1 .t",{
+        top: "5%",
+        duration: 1,
+        delay: 2
+      },"same1")
+
+      p1.to("#proj-text-area h1 .s",{
+        top: "5%",
+        duration: 1,
+        delay: 2
+      },"same1")
+    }
+  }
+  projectanimation();
+
   } else {
     console.log(error);
   }
@@ -929,6 +991,4 @@ myFunction(x);
 x.addEventListener("change", function() {
   myFunction(x);
 });
-
-/* =============================================== PROJECTS ===================================================================== */
 
