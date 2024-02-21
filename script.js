@@ -912,69 +912,129 @@ function myFunction(x) {
         document.querySelector(".side-box").style.right = "-100%";
         document.querySelector(".menu3").style.display = "none";
   });
+}
 
 /* =============================================== PROJECTS ===================================================================== */
 
-    function projectanimation(){
-      var p1 = gsap.timeline({
-        scrollTrigger:{
-          trigger: "#proj-text-area",
-          start: "-600px",
-          end: "-300px",
-          scrub: 1,
-        }
-      })
+    var p1 = gsap.timeline({
+      scrollTrigger:{
+        trigger: "#proj-text-area",
+        start: "-600px",
+        end: "-300px",
+        scrub: 1,
+      }
+    })
 
-      p1.to("#proj-text-area h1 .p",{
-        top: "5%",
-        duration: 1,
-        delay: .5
-      },"same1")
+    p1.to("#proj-text-area h1 .p",{
+      top: "5%",
+      duration: .5,
+      delay: .1
+    },"same1")
 
-      p1.to("#proj-text-area h1 .r",{
-        top: "5%",
-        duration: 1,
-        delay: 1
-      },"same1")
+    p1.to("#proj-text-area h1 .r",{
+      top: "5%",
+      duration: .5,
+      delay: .2
+    },"same1")
 
-      p1.to("#proj-text-area h1 .o",{
-        top: "5%",
-        duration: 1,
-        delay: 1
-      },"same1")
+    p1.to("#proj-text-area h1 .o",{
+      top: "5%",
+      duration: .5,
+      delay: .25
+    },"same1")
 
-      p1.to("#proj-text-area h1 .j",{
-        top: "5%",
-        duration: 1,
-        delay: 1.5
-      },"same1")
+    p1.to("#proj-text-area h1 .j",{
+      top: "5%",
+      duration: .5,
+      delay: .35
+    },"same1")
 
-      p1.to("#proj-text-area h1 .e",{
-        top: "5%",
-        duration: 1,
-        delay: 1.5
-      },"same1")
+    p1.to("#proj-text-area h1 .e",{
+      top: "5%",
+      duration: .5,
+      delay: .45
+    },"same1")
 
-      p1.to("#proj-text-area h1 .c",{
-        top: "5%",
-        duration: 1,
-        delay: 2
-      },"same1")
+    p1.to("#proj-text-area h1 .c",{
+      top: "5%",
+      duration: .5,
+      delay: .55
+    },"same1")
 
-      p1.to("#proj-text-area h1 .t",{
-        top: "5%",
-        duration: 1,
-        delay: 2
-      },"same1")
+    p1.to("#proj-text-area h1 .t",{
+      top: "5%",
+      duration: .5,
+      delay: .6
+    },"same1")
 
-      p1.to("#proj-text-area h1 .s",{
-        top: "5%",
-        duration: 1,
-        delay: 2
-      },"same1")
-    }
-  }
-  projectanimation();
+    p1.to("#proj-text-area h1 .s",{
+      top: "5%",
+      duration: .5,
+      delay: .6
+    },"same1")
+
+    var b1 = gsap.timeline({
+      scrollTrigger:{
+        trigger: "#proj-show-case .box1",
+        start: "-750px",
+        end: "-550px",
+        scrub: 1,
+        // markers: true,
+      }
+    })
+
+    b1.to("#proj-show-case .box1",{
+      top: "3%",
+      scale: 1,
+      duration: .5,
+    },"project1")
+
+    b1.to("#proj-show-case .box1 .img-box .overlay",{
+      width: "0%",
+      duration: .35,
+    },"project1")
+
+    var b2 = gsap.timeline({
+      scrollTrigger:{
+        trigger: "#proj-show-case .box2",
+        start: "-770px",
+        end: "-570px",
+        scrub: 1,
+        // markers: true,
+      }
+    })
+
+    b2.to("#proj-show-case .box2",{
+      top: "24.5%",
+      scale: 1,
+      duration: .5
+    },"project2")
+
+    b2.to("#proj-show-case .box2 .img-box .overlay",{
+      width: "0%",
+      duration: .35,
+    },"project2")
+
+    var b3 = gsap.timeline({
+      scrollTrigger:{
+        trigger: "#proj-show-case .box3",
+        start: "-800px",
+        end: "-600px",
+        scrub: 1,
+        // markers: true,
+      }
+    })
+
+    b3.to("#proj-show-case .box3",{
+      top: "45.5%",
+      scale: 1,
+      duration: .5
+    },"project3")
+
+    b3.to("#proj-show-case .box3 .img-box .overlay",{
+      width: "0%",
+      duration: .35,
+    },"project3")
 
   } else {
     console.log(error);
