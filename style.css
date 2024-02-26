@@ -2050,7 +2050,120 @@ html,body{
         top: 46%;
     }    
 
-    #main #contact{
+    #proj-show-case .box4{
+        height: 90vh;
+        bottom: 5%;
+    }
+
+    #proj-show-case .box4 .box4-show-case{
+        height: 100%;
+        width: 100%;
+        padding: 10px 0 0 20px;
+    }
+
+    #proj-show-case .box4 .box4-show-case h4{
+        font-size: 1.2rem;
+    }
+    
+    #proj-show-case .box4 .box4-show-case #box4-details{
+        height: 20%;
+        width: 95%;
+        padding: 20px 0 30px 0;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #proj-show-case .box4 .box4-show-case #box4-details:hover{
+        background-color: #f2edde;
+        padding: 20px 0 30px 0;
+    }
+
+    #proj-show-case .box4 .box4-show-case .name{
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+    
+    #proj-show-case .box4 .box4-show-case .view{
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+
+    #contact .contact-details{
+        height: 90%;
+        width: 100%;
+        display: flex;
+    }    
+
+    .contact-details .left-contact{
+        width: 100%;
+    }
+
+    .contact-details .left-contact h1{
+        font-size: 5rem;
+        font-weight: 600;
+        white-space: nowrap;
+        left: 6%;
+        top: 10%;
+    }
+
+    .contact-details .left-contact img{
+        height: 10%;
+        width: 35%;
+        top: 23%;
+    }
+
+    .left-contact ul li{
+        top: 40%;
+        left: 6%;
+        font-size: 1.3rem;
+    }
+
+    .left-contact ul li:last-child{
+        top: 45%;
+        font-size: 1.2rem;
+    }
+
+    #contact .right-contact{
+        padding: 0;
+    }
+
+    .right-contact p{
         display: none;
+    }
+
+    .right-contact ul{
+        left: -300%;
+        top: 55%;
+    }
+
+    .right-contact ul li:first-child{
+        font-size: 1.3rem;
+    }
+
+    .right-contact ul li a{
+        color: #ff007f;
+        letter-spacing: .7px;
+    }
+
+    #contact .footer{
+        position: relative;
+    }
+
+    #contact .footer ul li:first-child{
+        position: absolute;
+        left: 5%;
+        top: -150%;
+    }
+
+    #contact .footer ul li:nth-child(2){
+        position: absolute;
+        left: 5%;
+        top: -100%;
+    }
+
+    #contact .footer ul li:last-child{
+        position: absolute;
+        left: 5%;
+        top: -50%;
     }
 }
