@@ -2090,7 +2090,54 @@ html,body{
 
 /* ============================================================================================================================== */
 
+    #projects #proj-details #project-details{
+        height: 85%;
+        width: 90%;
+    }
 
+    #projects #proj-details .close{
+        height: 8%;
+    }
+
+    #projects #proj-details .close span{
+        font-size: 2.5rem;
+        font-weight: 400;
+        right: 5%;
+        top: -20%;
+    }
+
+    #proj-details h1{
+        font-size: 2.75rem;
+        height: 14%;
+        letter-spacing: 1px;
+    }
+
+    #proj-details .proj-info{
+        height: 82%;
+        flex-direction: column;
+    }   
+
+    #proj-details .proj-info .pi-left{
+        height: 50%;
+        width: 100%;
+        padding: 30px 0 0 0;
+    }
+    
+    #proj-details .proj-info ul:nth-child(2){
+        padding: 0 30px;
+    }
+
+    #proj-details .proj-info ul li{
+        font-size: 1.2rem;
+        padding-bottom: 3px;
+    }
+
+    #proj-details .proj-info .pi-right{
+        height: 50%;
+        width: 100%;
+        padding: 30px 0 0 0;
+    }
+    
 
 /* =============================================== CONTACT ===================================================================== */
 
